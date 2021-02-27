@@ -1,6 +1,5 @@
 from turtle import *
 
-
 class Disc(Turtle):
     def __init__(self, n):
         Turtle.__init__(self, shape="square", visible=False)
@@ -8,7 +7,6 @@ class Disc(Turtle):
         self.shapesize(1.5, n * 1.5, 2)  # square-->rectangle
         self.fillcolor(n / 6., 0, 1 - n / 6.)
         self.st()
-
 
 class Tower(list):
     def __init__(self, x):
@@ -24,13 +22,11 @@ class Tower(list):
         d.sety(150)
         return d
 
-
 def hanoi(n, from_, with_, to_):
     if n > 0:
         hanoi(n - 1, from_, to_, with_)
         to_.push(from_.pop())
         hanoi(n - 1, with_, from_, to_)
-
 
 def play():
     onkey(None, "space")
@@ -42,7 +38,6 @@ def play():
     except Terminator:
         pass
 
-
 def main():
     global t1, t2, t3
     ht();
@@ -51,7 +46,6 @@ def main():
     t1 = Tower(-250)
     t2 = Tower(0)
     t3 = Tower(250)
-    # make tower of 6 discs
     for i in range(6, 0, -1):
         t1.push(Disc(i))
     write("Hugo's Hanoi-Towers Puzzle - press spacebar to start game",
@@ -59,7 +53,6 @@ def main():
     onkey(play, "space")
     listen()
     return "EVENTLOOP"
-
 
 if __name__ == "__main__":
     msg = main()
