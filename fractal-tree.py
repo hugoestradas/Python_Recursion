@@ -50,7 +50,6 @@ def recursive_draw(tur, x, y, width, height, count):
         # Bottom right
         recursive_draw(tur, x + width // 2, y + width // 2, width // 2, height // 2, count)
 
-
 if __name__ == "__main__":
     # Screen setup
     screen = turtle.Screen()
