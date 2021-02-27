@@ -48,8 +48,8 @@ def main():
     t3 = Tower(250)
     for i in range(6, 0, -1):
         t1.push(Disc(i))
-    write("Hugo's Hanoi-Towers Puzzle - press spacebar to start game",
-          align="center", font=("Courier", 17, "bold"))
+    write("Hugo's Hanoi-Towers Puzzle - press spacebar to start.",
+          align="center", font=("Courier", 21, "bold"))
     onkey(play, "space")
     listen()
     return "EVENTLOOP"
