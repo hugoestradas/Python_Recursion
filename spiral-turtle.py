@@ -1,6 +1,6 @@
 import turtle
 
-MAX_LENGTH = 1000
+MAX_LENGTH = 500
 INCREMENT = 13
 
 def draw_spiral(a_turtle, line_length):
