@@ -4,7 +4,7 @@ class Disc(Turtle):
     def __init__(self, n):
         Turtle.__init__(self, shape="square", visible=False)
         self.pu()
-        self.shapesize(1.5, n * 1.5, 2)  # square-->rectangle
+        self.shapesize(1.5, n * 1.5, 2)  # square->rectangle
         self.fillcolor(n / 6., 0, 1 - n / 6.)
         self.st()
 
