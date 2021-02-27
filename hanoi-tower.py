@@ -49,7 +49,7 @@ def main():
     for i in range(6, 0, -1):
         t1.push(Disc(i))
     write("Hugo's Hanoi-Towers Puzzle - press spacebar to start game",
-          align="center", font=("Courier", 16, "bold"))
+          align="center", font=("Courier", 17, "bold"))
     onkey(play, "space")
     listen()
     return "EVENTLOOP"

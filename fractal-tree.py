@@ -1,8 +1,8 @@
 import turtle
 
 SPEED = 17
-BG_COLOR = "yellow"
-PEN_COLOR = "blue"
+BG_COLOR = "light blue"
+PEN_COLOR = "red"
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 800
 DRAWING_WIDTH = 700
