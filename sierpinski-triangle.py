@@ -19,22 +19,18 @@ def get_mid_point(p1, p2):
 def sierpinski(points, depth, tur):
     draw_triangle(points, available_colours[depth], tur)
     if depth > 0:
-        # From bottom left vertex
         sierpinski([points[0],
                     get_mid_point(points[0], points[1]),
                     get_mid_point(points[0], points[2])],
                    depth - 1, tur)
-        # From apex
         sierpinski([points[1],
                     get_mid_point(points[0], points[1]),
                     get_mid_point(points[1], points[2])],
                    depth - 1, tur)
-        # From bottom right vertex
         sierpinski([points[2],
                     get_mid_point(points[2], points[1]),
                     get_mid_point(points[0], points[2])],
                    depth - 1, tur)
-
 
 if __name__ == '__main__':
     available_colours = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
