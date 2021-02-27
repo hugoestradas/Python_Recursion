@@ -65,8 +65,6 @@ if __name__ == "__main__":
     artist.color(PEN_COLOR)
     artist.speed(SPEED)
 
-    # Initial call to recursive draw function
     recursive_draw(artist, - DRAWING_WIDTH / 2, - DRAWING_HEIGHT / 2, DRAWING_WIDTH, DRAWING_HEIGHT, FRACTAL_DEPTH)
 
-    # Every Python Turtle program needs this (or an equivalent) to work correctly.
     turtle.done()
