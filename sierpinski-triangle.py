@@ -2,7 +2,6 @@ import turtle
 
 DEPTH = 2
 
-
 def draw_triangle(points, color, tur):
     tur.fillcolor(color)
     tur.up()
