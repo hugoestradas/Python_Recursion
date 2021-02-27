@@ -1,7 +1,7 @@
 import turtle
 
 MAX_LENGTH = 1000
-INCREMENT = 10
+INCREMENT = 13
 
 def draw_spiral(a_turtle, line_length):
     if line_length > MAX_LENGTH:
