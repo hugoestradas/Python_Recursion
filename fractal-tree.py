@@ -36,7 +36,7 @@ def recursive_draw(tur, x, y, width, height, count):
 
     if count <= 0:
         return
-    else:  
+    else:
         count -= 1
         recursive_draw(tur, x, y, width // 2, height // 2, count)
         recursive_draw(tur, x + width // 2, y, width // 2, height // 2, count)
@@ -44,13 +44,11 @@ def recursive_draw(tur, x, y, width, height, count):
         recursive_draw(tur, x + width // 2, y + width // 2, width // 2, height // 2, count)
 
 if __name__ == "__main__":
-    # Screen setup
     screen = turtle.Screen()
     screen.setup(SCREEN_WIDTH, SCREEN_HEIGHT)
     screen.title(TITLE)
     screen.bgcolor(BG_COLOR)
 
-    # Turtle artist (pen) setup
     artist = turtle.Turtle()
     artist.hideturtle()
     artist.pensize(PEN_WIDTH)
