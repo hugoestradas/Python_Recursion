@@ -34,7 +34,7 @@ def recursive_draw(tur, x, y, width, height, count):
         [x + width * 0.75, y + (height * 1.5) // 2],
     )
 
-    if count <= 0:  # The base case
+    if count <= 0:  
         return
     else:  # The recursive step
         count -= 1
