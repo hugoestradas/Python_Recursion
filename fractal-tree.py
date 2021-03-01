@@ -1,6 +1,6 @@
 import turtle
 
-SPEED = 17
+SPEED = 11
 BG_COLOR = "light blue"
 PEN_COLOR = "red"
 SCREEN_WIDTH = 800
@@ -51,6 +51,7 @@ if __name__ == "__main__":
 
     artist = turtle.Turtle()
     artist.hideturtle()
+    
     artist.pensize(PEN_WIDTH)
     artist.color(PEN_COLOR)
     artist.speed(SPEED)
@@ -58,4 +59,3 @@ if __name__ == "__main__":
     recursive_draw(artist, - DRAWING_WIDTH / 2, - DRAWING_HEIGHT / 2, DRAWING_WIDTH, DRAWING_HEIGHT, FRACTAL_DEPTH)
 
     turtle.done()
-    
