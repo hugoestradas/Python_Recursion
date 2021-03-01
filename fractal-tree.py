@@ -12,7 +12,6 @@ TITLE = "H-Tree Fractal with Python Turtle Graphics"
 FRACTAL_DEPTH = 4
 
 def draw_line(tur, pos1, pos2):
-    # print("Drawing from", pos1, "to", pos2)  # Uncomment for tracing the algorithm.
     tur.penup()
     tur.goto(pos1[0], pos1[1])
     tur.pendown()
