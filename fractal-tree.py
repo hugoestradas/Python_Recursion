@@ -58,3 +58,4 @@ if __name__ == "__main__":
     recursive_draw(artist, - DRAWING_WIDTH / 2, - DRAWING_HEIGHT / 2, DRAWING_WIDTH, DRAWING_HEIGHT, FRACTAL_DEPTH)
 
     turtle.done()
+    
