@@ -42,7 +42,7 @@ def main():
     global t1, t2, t3
     ht();
     penup();
-    goto(0, -225)  # writer turtle
+    goto(0, -225)  
     t1 = Tower(-250)
     t2 = Tower(0)
     t3 = Tower(250)
