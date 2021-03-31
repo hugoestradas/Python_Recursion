@@ -34,4 +34,4 @@ while True:
     t.clear()
     windmill()
     screen.update()
-    t.left(0.2) # Reduced here
+    t.left(0.2) # Reduced here.
